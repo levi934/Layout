@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+  <style>
+  body{ font-family:Arial, sans-serif;
+    margin:0;
+    padding:0;
+  }
+  header,nav,section,article,footer{
+    border:1px solid #ddd;
+    padding:10px;
+    margin: 10px;
+  }
+    .container {
+      display:flex;
+      flex-wrap: wrap;
+    }
+  nav{
+    flex-basis:100%;
+  }
+  .content{
+    display:flex;
+    flex-wrap:wrap;
+  }
+  section{
+    flex:1;
+  }
+  article{
+    flex:2;
+    display:flex;
+    flex-wrap:wrap;
+  }
+  form{
+    display:flex;
+    flex-direction:column;
+  }form {
+    display:flex;
+    flex-direction:column;
+  }
+  input [type="text"]
+  input[type="file"]{
+    margin-bottom:10px;
+  
+  </style>
+</head>
+<body>
+  <header>
+    <h1>titulo da pagina</h1>
+  </header>
+  <nav>
+    <ul>
+      <li> <a href="#"> link 1</a></li>
+      <li> <a href="#"> link 2</a></li>
+      <li> <a href="#"> link 3</a></li>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <section>
+      <h2>seção</h2>
+      <p>conteudo da seção à esquerda</p>
+    </section>
+    <article>
+      <header>
+        <h2>leia mais</h2>
+      </header>
+      <form>
+        <label for="nome">nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="seu nome">
+        <label for="arquivo"> Arquivo:</label>
+        <input type="file" id="arquivo" name="arquivo">
+        <button type="submit">Enviar</button>
+        
+      </form>
+      <figure>
+        <img src="aaaa" alt="aaa" width="200">
+        <section>
+          <p>paragrafo dentro do artigo.</p>
+        </section>
+    </article>
+  </div>
+  <footer>
+    <p>Rodape da pagina</p>
+  </footer>
+  
+</body>
+</html>
